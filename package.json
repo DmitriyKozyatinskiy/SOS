@@ -1,0 +1,25 @@
+{
+  "name": "sos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "mysql": "^2.9.0",
+    "require.js": "^0.3.97",
+    "node-mysql": "^0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriyKozyatinskiy/SOS.git"
+  },
+  "author": "itkpi.pp.ua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitriyKozyatinskiy/SOS/issues"
+  },
+  "homepage": "https://github.com/DmitriyKozyatinskiy/SOS#readme"
+}
