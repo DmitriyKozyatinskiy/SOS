@@ -12,71 +12,10 @@
 </head>
 <body style="background-image: url(img/bogdan.jpg)">
 <div class="page-wrap container-fluid">
-    <main>
-        <ol class="breadcrumb">
-            <li><a href="index.html">Головна сторінка</a></li>
-            <li class="active">Служби</li>
-        </ol>
-        <div class="collapse in service-main-logo" id="js-service-main-logo">
-            <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати поліцію?">
-                <img src="img/police_logo.jpg" alt="Поліція">
-            </a>
-            <p>
-                <button type="button" class="btn btn-primary btn-lg width100" id="js-other-services-button">Інші служби</button>
-            <p>
-        </div>
-
-        <div class="collapse service-logos" id="js-service-logos">
-            <div class="row">
-                <div class="col-xs-6">
-                    <a href="#" class="thumbnail js-service-button" id="js-police-button" data-message="Ви дійсно бажаете викликати поліцію?">
-                        <img src="img/police_logo.jpg" alt="Поліція">
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати швидку допомогу?">
-                        <img src="img/med_logo.jpg" alt="Швидка допомога">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6">
-                    <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати пожежну безпеку?">
-                        <img src="img/fire_logo.jpg" alt="Пожежна безпека">
-                    </a>
-                </div>
-                <div class="col-xs-6">
-                    <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати службу газу?">
-                        <img src="img/gas_logo.gif" alt="Служба газу">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
+    <main id="js-main"></main>
 
     <div class="container-fluid load-container">
         <div class="hidden" id="js-loader-container"></div>
-    </div>
-</div>
-
-<div class="modal fade confirmation-modal" id="js-confirmation-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content" id="js-confirmation-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-                <h3 class="modal-title text-center" id="js-confirmation-header"></h3>
-            </div>
-            <div class="modal-body" id="js-confirmation-body">
-                <p>
-                    <button type="button" class="btn btn-primary btn-lg width100">Викликати</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-default btn-lg width100" data-dismiss="modal">Відміна</button>
-                </p>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -84,7 +23,6 @@
 <!--<script src="js/vendor/jquery.mobile.js"></script>-->
 <script src="js/vendor/bootstrap.js"></script>
 <script src="js/vendor/progressbar.js"></script>
-<script src="js/loader.js"></script>
-<script src="js/services.js"></script>
+
 </body>
 </html>
