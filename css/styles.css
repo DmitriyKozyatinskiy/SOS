@@ -10,8 +10,14 @@ main {
     opacity: 0.85;
 }
 
-.wrapper {
+.load-container {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
 
+.page-wrap {
+    height: 100vh;
 }
 
 .width100 {

@@ -6,50 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SOS - Виклик служб</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<body>
-<main class="container-fluid wrapper">
-    <ol class="breadcrumb">
-        <li><a href="index.html">Головна сторінка</a></li>
-        <li class="active">Служби</li>
-    </ol>
-    <div class="service-logos">
-        <div class="row">
-            <div class="col-xs-6">
-                <a href="#" class="thumbnail">
-                    <img src="img/police_logo.jpg" alt="Поліція">
-                </a>
+<body style="background-image: url(img/bogdan.jpg)">
+<div class="page-wrap container-fluid">
+    <main>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li class="active">Служби</li>
+        </ol>
+        <div class="service-logos">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="#" class="thumbnail" id="js-police-image">
+                        <img src="img/police_logo.jpg" alt="Поліція">
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="img/med_logo.jpg" alt="Швидка допомога">
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-6">
-                <a href="#" class="thumbnail">
-                    <img src="img/med_logo.jpg" alt="Швидка допомога">
-                </a>
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="img/fire_logo.jpg" alt="Пожежна безпека">
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" class="thumbnail">
+                        <img src="img/gas_logo.gif" alt="Служба газу">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <a href="#" class="thumbnail">
-                    <img src="img/fire_logo.jpg" alt="Пожежна безпека">
-                </a>
-            </div>
-            <div class="col-xs-6">
-                <a href="#" class="thumbnail">
-                    <img src="img/gas_logo.gif" alt="Служба газу">
-                </a>
-            </div>
-        </div>
+    </main>
+
+    <div class="container-fluid load-container">
+        <div class="hidden" id="js-loader-container"></div>
     </div>
-</main>
+</div>
+
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/bootstrap.js"></script>
-<script src="js/password.js"></script>
+<script src="js/vendor/progressbar.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/services.js"></script>
 </body>
 </html>

@@ -16,15 +16,21 @@
     <![endif]-->
 </head>
 <body style="background-image: url(img/bogdan.jpg)">
-<main class="container-fluid wrapper">
-    <div class="vertical-center lead text-center">
-        <a href="login.html" class="btn btn-primary btn-lg width100">ВХІД</a>
-        <br><br>
-        <a href="registration.html" class="registration-link" style="font-size:18px;">Зареєструватися</a>
+<div class="page-wrap container-fluid">
+    <main>
+        <div class="vertical-center lead text-center">
+            <a href="login.html" class="btn btn-primary btn-lg width100">ВХІД</a>
+            <br><br>
+            <a href="registration.html" class="registration-link" style="font-size:18px;">Зареєструватися</a>
+        </div>
+    </main>
+
+    <div class="container-fluid load-container">
+        <div class="hidden" id="js-loader-container"></div>
     </div>
-</main>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/registration/password.js"></script>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/bootstrap.js"></script>
+<script src="js/password.js"></script>
 </body>
 </html>

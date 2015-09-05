@@ -16,27 +16,34 @@
     <![endif]-->
 </head>
 <body style="background-image: url(img/lubid.jpg)">
-<main class="container-fluid">
-    <ol class="breadcrumb">
-        <li><a href="index.html">Головна сторінка</a></li>
-        <li class="active">Вхід</li>
-    </ol>
-    <form id="js-registration-form">
-        <div class="form-group js-password-field">
-            <label for="js-phone">Телефон</label>
-            <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required>
-        </div>
+<div class="page-wrap container-fluid">
+    <main>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li class="active">Вхід</li>
+        </ol>
+        <form id="js-registration-form">
+            <div class="form-group js-password-field">
+                <label for="js-phone">Телефон</label>
+                <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required>
+            </div>
 
-        <div class="form-group js-password-field">
-            <label for="js-password">Пароль</label>
-            <input type="password" class="form-control" id="js-password" placeholder="Пароль" required>
-        </div>
+            <div class="form-group js-password-field">
+                <label for="js-password">Пароль</label>
+                <input type="password" class="form-control" id="js-password" placeholder="Пароль" required>
+            </div>
 
-        <button type="submit" class="btn btn-primary width100">Увійти</button>
-    </form>
-</main>
+            <button type="submit" class="btn btn-primary width100">Увійти</button>
+        </form>
+    </main>
+
+    <div class="container-fluid load-container">
+        <div class="hidden" id="js-loader-container"></div>
+    </div>
+</div>
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/bootstrap.js"></script>
+<script src="js/vendor/progressbar.js"></script>
 <script src="js/password.js"></script>
 </body>
 </html>
