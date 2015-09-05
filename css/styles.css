@@ -1,7 +1,31 @@
+body {
+    color: black;
+}
+
 .wrapper {
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .width100 {
     width: 100%;
+}
+
+.service-logos {
+    position: relative;
+    top: 40%;
+    transform: translateX(-50%);
+}
+
+.registration-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
