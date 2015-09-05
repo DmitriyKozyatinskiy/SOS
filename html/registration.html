@@ -17,40 +17,38 @@
 </head>
 <body>
 <main class="container-fluid wrapper" style="background-image: url(../img/rodina_mat.jpg)">
+    <ol class="breadcrumb">
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li class="active">Реєстрація</li>
+    </ol>
     <form id="js-registration-form">
-        <fieldset>
-            <legend>Реєстрація</legend>
-            <div class="form-group">
-                <label for="first-name">Ім'я</label>
-                <input class="form-control" id="first-name" placeholder="Ім'я" required>
-            </div>
-            <div class="form-group">
-                <label for="second-name">Призвіще</label>
-                <input class="form-control" id="second-name" placeholder="Призвіще" required>
-            </div>
-            <div class="form-group">
-                <label for="third-name">По батькові</label>
-                <input class="form-control" id="third-name" placeholder="По батькові" required>
-            </div>
-            <div class="form-group js-password-field">
-                <label for="js-phone">Телефон</label>
-                <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required>
-            </div>
+        <div class="form-group">
+            <label for="first-name">Ім'я</label>
+            <input class="form-control" id="first-name" placeholder="Ім'я" required>
+        </div>
+        <div class="form-group">
+            <label for="second-name">Призвіще</label>
+            <input class="form-control" id="second-name" placeholder="Призвіще" required>
+        </div>
 
-            <div class="form-group js-password-field">
-                <label for="js-password">Пароль</label>
-                <input type="password" class="form-control" id="js-password" placeholder="Пароль" required>
-            </div>
-            <span class="help-block text-danger hidden js-password-error">Паролі повинні співпадати</span>
+        <div class="form-group js-password-field">
+            <label for="js-phone">Телефон</label>
+            <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required>
+        </div>
 
-            <div class="form-group js-password-field">
-                <label for="js-password">Повтор пароля</label>
-                <input type="password" class="form-control" id="js-password-repeat" placeholder="Пароль" required>
-            </div>
-            <span class="help-block text-danger hidden js-password-error">Паролі повинні співпадати</span>
+        <div class="form-group js-password-field">
+            <label for="js-password">Пароль</label>
+            <input type="password" class="form-control" id="js-password" placeholder="Пароль" required>
+        </div>
+        <span class="help-block text-danger hidden js-password-error">Паролі повинні співпадати</span>
 
-            <button type="submit" class="btn btn-primary width100">Зареєструватися</button>
-        </fieldset>
+        <div class="form-group js-password-field">
+            <label for="js-password-repeat">Повтор пароля</label>
+            <input type="password" class="form-control" id="js-password-repeat" placeholder="Пароль" required>
+        </div>
+        <span class="help-block text-danger hidden js-password-error">Паролі повинні співпадати</span>
+
+        <button type="submit" class="btn btn-primary width100">Зареєструватися</button>
     </form>
 </main>
 <script src="../js/jquery.js"></script>

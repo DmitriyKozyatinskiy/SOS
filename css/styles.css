@@ -12,10 +12,11 @@ body {
     width: 100%;
 }
 
-.service-logos {
-    position: relative;
-    top: 40%;
-    transform: translateX(-50%);
+.service-logos img {
+    height: 140px;
+    /*position: relative;*/
+    /*top: 40%;*/
+    /*transform: translateX(-50%);*/
 }
 
 .registration-link {

@@ -17,21 +17,22 @@
 </head>
 <body>
 <main class="container-fluid wrapper" style="background-image: url(../img/lubid.jpg)">
+    <ol class="breadcrumb">
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li class="active">Вхід</li>
+    </ol>
     <form id="js-registration-form">
-        <fieldset>
-            <legend>Вхід</legend>
-            <div class="form-group js-password-field">
-                <label for="js-phone">Телефон</label>
-                <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required style="opacity:0.8;">
-            </div>
+        <div class="form-group js-password-field">
+            <label for="js-phone">Телефон</label>
+            <input type="tel" class="form-control" id="js-phone" placeholder="0505558865" required>
+        </div>
 
-            <div class="form-group js-password-field">
-                <label for="js-password">Пароль</label>
-                <input type="password" class="form-control" id="js-password" placeholder="Пароль" required style="opacity:0.8;">
-            </div>
+        <div class="form-group js-password-field">
+            <label for="js-password">Пароль</label>
+            <input type="password" class="form-control" id="js-password" placeholder="Пароль" required>
+        </div>
 
-            <button type="submit" class="btn btn-primary width100" style="opacity:0.95;">Увійти</button>
-        </fieldset>
+        <button type="submit" class="btn btn-primary width100">Увійти</button>
     </form>
 </main>
 <script src="../js/jquery.js"></script>
