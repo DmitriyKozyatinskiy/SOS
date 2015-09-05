@@ -4,7 +4,6 @@ var Loader = function (document, $, ProgressBar) {
     var $main = $('main'),
         $loadContainer = $('#js-loader-container');
 
-
     var loader = new ProgressBar.Circle('#js-loader-container', {
         color: '#aaa',
         strokeWidth: 10,

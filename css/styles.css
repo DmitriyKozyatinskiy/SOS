@@ -10,6 +10,11 @@ main {
     opacity: 0.85;
 }
 
+.confirmation-modal {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .load-container {
     position: relative;
     top: 40%;
@@ -17,7 +22,6 @@ main {
 }
 
 .page-wrap {
-    height: 100vh;
 }
 
 .width100 {
@@ -31,9 +35,14 @@ main {
     /*transform: translateX(-50%);*/
 }
 
+.service-main-logo {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
 .registration-link {
     color: white;
-    text-decoration: none;
     font-weight: bold;
 }
 
