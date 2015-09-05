@@ -9,11 +9,12 @@ main {
     height: 100vh;
     position: relative;
     opacity: 0.85;
+    padding: 10px 0;
 }
 
 .confirmation-modal {
-    top: 50%;
-    transform: translateY(-50%);
+    //top: 50%;
+    //transform: translateY(-50%);
 }
 
 .load-container {
@@ -38,8 +39,8 @@ main {
 
 .service-main-logo {
     position: relative;
-    top: 30%;
-    transform: translateY(-50%);
+    /*top: 30%;*/
+    /*transform: translateY(-50%);*/
 }
 
 .registration-link {
@@ -62,7 +63,7 @@ main {
 .logout-button {
     position: absolute;
     bottom: 5px;
-    right: 5px;
+    right: 0;
     color: white;
     font-weight: bold;
 }

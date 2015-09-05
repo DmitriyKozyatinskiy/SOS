@@ -5,7 +5,9 @@
         isLoggedIn = Cookies.get('isLoggedIn'),
         contentUrl = isLoggedIn ? 'html/main-registered.html' : 'html/main-unregistered.html';
 
-    var logIn = function () {
+    var logIn = function (event) {
+        event.preventDefault();
+
         Cookies.set('isLoggedIn', 'true');
         window.location.reload();
     };
