@@ -21,39 +21,10 @@ connection.query("INSERT INTO erm14 (phone2)" +
     console.log('Registration ok');
 
 });
-/*
-  CREATE TABLE user (first_name VARCHAR(20), last_name VARCHAR(20), 
-  password VARCHAR(20), imei DECIMAL(20), phone DECIMAL(9), 
-  email VARCHAR(50), ));
-  /*
-connection.query("INSERT INTO user (first_name, last_name, password, imei, phone, email, )" +
-  "  VALUE ('ff', 'll', 'fsf2d', 43215325, 4323531,'4321@ert.ddt', 334321, )", function(err, result) {
-/*
-connection.query("INSERT INTO erq24q16 (column_name1, w) VALUE (733, 'dewwer')", function(err, result) {
-  if(err)
-    console.log('Error while performing Query. Registration falied. ' + err);
-  else
-    console.log('Registration ok');
 
-});
-/*
-connection.query('SELECT * from user', function(err, rows, fields) {
-  console.log([
-    err,
-    rows,
-    fields]);
-  if (!err)
-    console.log('The solution is: ', rows);
-  else
-    console.log('Error while performing Query.');
-});
-*/
-
-
-//api
 
 //registration
-
+/*
 var _first_name = "ff";
 var _last_name = "ll";
 var _password = "fsf2d"; 
@@ -62,7 +33,7 @@ var _phone = 4323531;
 var _email = "4321@ert.ddt"; 
 var _phone2 = 334321; 
 var _user_id = 1;
-/*
+
 var post = {"first_name": _first_name, 
             "last_name": _last_name, 
             "password": _password, 
@@ -72,14 +43,11 @@ var post = {"first_name": _first_name,
             "phone2": _phone2, 
             "user_id": _user_id
           };
-
-
 */
-/*
-  'INSERT INTO user VALUES ?', [post]*/
+//  'INSERT INTO user VALUES ?', post
   
-connection.query("INSERT INTO user (first_name, last_name, password, imei, phone, email, phone2)" +
-  "  VALUE ('ff', 'll', 'fsf2d', 43215325, 4323531,'4321@ert.ddt', 1)", function(err, result) {
+connection.query("INSERT INTO user (first_name, last_name, password, imei, phone, email, phone2, user_id)" +
+  "  VALUE ('ff', 'll', 'fsf2d', 43215325, 4323531,'4321@ert.ddt', 134, 1)" , function(err, result) {
   if(err)
     console.log('Error while performing Query. Registration falied. ' + err);
   else
