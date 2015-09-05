@@ -10,6 +10,11 @@
         window.location.reload();
     };
 
+    var logOut = function () {
+        Cookies.remove('isLoggedIn');
+        window.location.reload();
+    };
+
     $.ajax({
         url: contentUrl,
         beforeSend: function () {
@@ -21,5 +26,7 @@
         Loader.hide();
     });
 
-    $(document).on('submit', '#js-login-form', logIn);
+    $(document)
+        .on('submit', '#js-login-form', logIn)
+        .on('click', '#js-logout-button', logOut);
 }(document, jQuery));

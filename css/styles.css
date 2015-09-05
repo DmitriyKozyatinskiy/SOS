@@ -59,3 +59,11 @@ main {
     width: 100%;
 }
 
+.logout-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    font-weight: bold;
+}
+
