@@ -9,9 +9,16 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
+<script>
+(function () {
+    setTimeout(function(){ document.getElementById('hiddener').style.display = "none";
+ }, 4000);
+})();
+</script>
 <body>
 <main class="container-fluid wrapper" style="background-image: url(img/medic.jpg);background-repeat:no-repeat; background-size:cover;">
-   
+
+<div class="alert alert-success" id="hiddener" role="alert" style="font-weight:bold;">Ваш запит прийнято! Чекайте на приїзд швидкої допомоги. </div>
 
     <!-- Begin page content -->
     <div class="container">
