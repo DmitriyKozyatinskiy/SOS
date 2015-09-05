@@ -1,20 +1,18 @@
 ;(function (document, $) {
     'use strict';
 
-    var $confirmation = $('#js-confirmation-modal'),
-        $header = $('#js-confirmation-header');
-
     var showAllServices = function () {
         $('#js-service-main-logo').collapse('hide');
         $('#js-service-logos').collapse('show');
     };
 
     var showConfirmation = function () {
+        console.log('hello');
         var $trigger = $(this),
             message = $trigger.data('message');
 
-        $header.html(message);
-        $confirmation.modal();
+        $('#js-confirmation-header').html(message);
+        $('#js-confirmation-modal').modal();
     };
 
     $(document)
