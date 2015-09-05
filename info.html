@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Інформація про хворого</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<main class="container-fluid wrapper" style="background-image: url(img/medic.jpg);background-repeat:no-repeat; background-size:cover;">
+   
+
+    <!-- Begin page content -->
+    <div class="container">
+          <div class="page-header">
+            <h4>Інформація про хворого</h4>
+          </div>
+          <div>
+              <em>1. Виберіть стать:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="1">
+                <option selected value="nothing"></option>
+                <option value="man">Чоловіча</option>
+                <option value="woman">Жіноча</option>
+                <option value="!know">Не відомо</option>
+              </select>
+          </div><br/>
+          <div>
+              <em>2. Вкажіть вік хворого:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="2">
+                <option selected value="nothing"></option>
+                <option value="little">Дитина</option>
+                <option value="medium">Підліток</option>
+                <option value="normal">Дорослий</option>
+                <option value="old">Людина похилого віку</option>
+              </select>
+          </div><br/>
+           <div>
+              <em>3. Причина:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="2">
+                <option selected value="nothing"></option>
+                <option value="little">ДТП</option>
+                <option value="medium">Вагітність</option>
+                <option value="normal">Висока температура</option>
+                <option value="old">Серцево-судинна</option>
+              </select>
+          </div>
+          <div style="hidden:overflow;">
+           <button type="button" class="btn btn-primary btn-lg" style="margin-top:15px; float:left;">Надіслати</button>
+           <button type="button" class="btn btn-default" style="margin-top:20px; float:right;">Ні, дякую.</button>
+         </div>
+    </div>
+
+    
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</main>
+<script src="js/vendor/jquery.js"></script>
+<!--CHOSEN-->
+<script src="js/chosen/chosen.jquery.js"></script>
+<script src="js/chosen/bower.json"></script>
+<script src="js/chosen/chosen.proto.min.js"></script>
+<script src="js/chosen/chosen.proto.js"></script>
+<script src="js/chosen/chosen.jquery.min.js"></script>
+<!--end  Chosen-->
+<script src="js/vendor/bootstrap.js"></script>
+<script src="js/vendor/registration/password.js"></script>
+</body>
+</html>
