@@ -5,16 +5,21 @@
         isLoggedIn = Cookies.get('isLoggedIn'),
         contentUrl = isLoggedIn ? 'html/main-registered.html' : 'html/main-unregistered.html';
 
+    var logIn = function () {
+        Cookies.set('isLoggedIn', 'true');
+        window.location.reload();
+    };
+
     $.ajax({
         url: contentUrl,
         beforeSend: function () {
-            console.log('hello');
             Loader.show();
         }
     }).done(function (response) {
-        console.log('done');
         $mainContainer.html(response);
     }).always(function () {
         Loader.hide();
     });
+
+    $(document).on('submit', '#js-login-form', logIn);
 }(document, jQuery));
