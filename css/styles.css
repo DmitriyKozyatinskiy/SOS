@@ -30,3 +30,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+input {
+    opacity:0.85;
+}
