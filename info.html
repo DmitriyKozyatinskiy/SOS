@@ -24,45 +24,39 @@
           <div class="page-header">
             <h4>Інформація про хворого</h4>
           </div>
-
-         <div class="btn-group" role="group" style="width:100%;">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%;">
-          Вік людини
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" style="width:100%; text-align:center;">
-          <select multiple class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
-        </ul>
-      </div>
-
-       <div class="btn-group" role="group" style="width:100%;">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%;">
-          Оберіть стать
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" style="width:100%; text-align:center;">
-          <li><a href="#">Чоловіча</a></li>
-          <li><a href="#">Жіноча</a></li>
-          <li><a href="#">Не знаю</a></li>
-        </ul>
-      </div>
-
-
-
-<select multiple class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
-    
+          <div>
+              <em>1. Виберіть стать:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="1">
+                <option selected value="nothing"></option>
+                <option value="man">Чоловіча</option>
+                <option value="woman">Жіноча</option>
+                <option value="!know">Не відомо</option>
+              </select>
+          </div><br/>
+          <div>
+              <em>2. Вкажіть вік хворого:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="2">
+                <option selected value="nothing"></option>
+                <option value="little">Дитина</option>
+                <option value="medium">Підліток</option>
+                <option value="normal">Дорослий</option>
+                <option value="old">Людина похилого віку</option>
+              </select>
+          </div><br/>
+           <div>
+              <em>3. Причина:</em><br/>
+              <select data-placeholder="" style="width:100%;height:40px;" tabindex="2">
+                <option selected value="nothing"></option>
+                <option value="little">ДТП</option>
+                <option value="medium">Вагітність</option>
+                <option value="normal">Висока температура</option>
+                <option value="old">Серцево-судинна</option>
+              </select>
+          </div>
+          <div style="hidden:overflow;">
+           <button type="button" class="btn btn-primary btn-lg" style="margin-top:15px; float:left;">Надіслати</button>
+           <button type="button" class="btn btn-default" style="margin-top:20px; float:right;">Ні, дякую.</button>
+         </div>
     </div>
 
     
@@ -73,6 +67,13 @@
 
 </main>
 <script src="js/vendor/jquery.js"></script>
+<!--CHOSEN-->
+<script src="js/chosen/chosen.jquery.js"></script>
+<script src="js/chosen/bower.json"></script>
+<script src="js/chosen/chosen.proto.min.js"></script>
+<script src="js/chosen/chosen.proto.js"></script>
+<script src="js/chosen/chosen.jquery.min.js"></script>
+<!--end  Chosen-->
 <script src="js/vendor/bootstrap.js"></script>
 <script src="js/vendor/registration/password.js"></script>
 </body>
