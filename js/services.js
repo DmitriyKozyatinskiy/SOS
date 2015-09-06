@@ -2,6 +2,9 @@
     'use strict';
 
     var showAllServices = function () {
+        $('#js-additional-info-area').val('');
+        $('#js-additional-info-status').addClass('hidden');
+        $('#js-additional-info-form').removeClass('hidden');
         $('#js-logos').removeClass('hidden');
         $('#js-success-message').addClass('hidden');
         $('#js-call-notification').addClass('hidden');

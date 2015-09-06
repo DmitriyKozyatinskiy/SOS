@@ -19,6 +19,14 @@
         }, 5000);
     };
 
+    var sendAdditionalInfo = function (event) {
+        event.preventDefault();
+
+        $(this).addClass('hidden');
+        $('#js-additional-info-status').removeClass('hidden');
+    };
+
     $(document)
-        .on('click', '.js-service-caller', callService);
+        .on('click', '.js-service-caller', callService)
+        .on('submit', '#js-additional-info-form', sendAdditionalInfo);
 }(document, jQuery));

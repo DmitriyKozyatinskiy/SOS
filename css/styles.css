@@ -81,4 +81,8 @@ main {
 #js-call-type {
     font-weight: bold;
     text-align: center;
- }
+}
+
+.success-button {
+    font-size: 60px;
+}
