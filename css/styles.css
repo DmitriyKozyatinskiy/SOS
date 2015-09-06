@@ -62,3 +62,23 @@ main {
     font-weight: bold;
 }
 
+.pull-bottom {
+    position: absolute;
+    bottom: 5px;
+}
+
+.additional-info-area {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    resize: none;
+}
+
+.additional-info-button {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#js-call-type {
+    font-weight: bold;
+    text-align: center;
+ }

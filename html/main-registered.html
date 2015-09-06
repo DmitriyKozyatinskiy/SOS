@@ -1,10 +1,24 @@
+<div id="js-call-notification" class="hidden">
+    <div class="alert alert-info" role="alert">
+        <p id="js-call-type">Здарова</p>
+    </div>
+    <div class="pull-bottom width100">
+            <button type="button" class="btn btn-warning width100" id="js-cancel-button">Відмінити виклик</button>
+        </div>
+    </div>
+</div>
+
 <div class="alert alert-success hidden" id="js-success-message" role="alert">
     <p>
-        <strong>Допомога скоро приїде. Зачекайте.</strong>
+        <strong>Допомога скоро приїде, зачекайте.</strong>
     </p>
     <p>
-        <a href="#" class="btn btn-primary width100">Надати додаткову інформацію</a>
+        <form>
+            <textarea class="form-control additional-info-area" rows="3" placeholder="Додаткова інформація" required></textarea>
+            <button type="submit" class="btn btn-primary width100 additional-info-button">Надати додаткову інформацію</button>
+        </form>
     </p>
+    <br>
     <p>
         <a href="#" class="btn btn-default width100 js-other-services-button">Викликати іншу службу</a>
     </p>
@@ -12,13 +26,12 @@
 
 <div id="js-logos">
     <div class="collapse in service-main-logo" id="js-service-main-logo">
-        <a href="#" class="thumbnail js-service-caller" data-type="police">
+        <a href="#" class="thumbnail js-service-caller" data-type="police" data-description="Ви викликаете поліцію">
             <img src="img/police_logo.jpg" alt="Поліція">
         </a>
 
         <p>
-            <button type="button" class="btn btn-primary btn-lg width100 js-other-services-button">Інші служби
-            </button>
+            <button type="button" class="btn btn-primary btn-lg width100 js-other-services-button">Інші служби</button>
         <p>
     </div>
 
@@ -26,13 +39,13 @@
         <div class="row">
             <div class="col-xs-6">
                 <a href="#" class="thumbnail js-service-button"
-                   data-message="Ви дійсно бажаете викликати пожежну безпеку?">
+                   data-message="Ви дійсно бажаете викликати пожежну безпеку?" data-description="Ви викликаете пожежну безпеку">
                     <img src="img/fire_logo.jpg" alt="Пожежна безпека">
                 </a>
             </div>
             <div class="col-xs-6">
                 <a href="#" class="thumbnail js-service-button" id="js-police-button"
-                   data-message="Ви дійсно бажаете викликати поліцію?">
+                   data-message="Ви дійсно бажаете викликати поліцію?" data-description="Ви викликаете поліцію">
                     <img src="img/police_logo.jpg" alt="Поліція">
                 </a>
             </div>
@@ -40,16 +53,17 @@
         <div class="row">
             <div class="col-xs-6">
                 <a href="#" class="thumbnail js-service-button"
-                   data-message="Ви дійсно бажаете викликати швидку допомогу?">
+                   data-message="Ви дійсно бажаете викликати швидку допомогу?" data-description="Ви викликаете швидку допомогу">
                     <img src="img/med_logo.jpg" alt="Швидка допомога">
                 </a>
             </div>
             <div class="col-xs-6">
-                <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати службу газу?">
+                <a href="#" class="thumbnail js-service-button" data-message="Ви дійсно бажаете викликати службу газу?" data-description="Ви викликаете службу газу">
                     <img src="img/gas_logo.gif" alt="Служба газу">
                 </a>
             </div>
         </div>
     </div>
 </div>
-<a class="btn btn-primary logout-button" id="js-logout-button" style="position: absolute; bottom: 5px;">Вихід</a>
+
+<!--<a class="btn btn-primary logout-button" id="js-logout-button" style="position: absolute; bottom: 5px;">Вихід</a>-->
