@@ -21,7 +21,7 @@ var Loader = function (document, $, ProgressBar) {
     var showLoader = function () {
         $main.addClass('hidden');
         $loadContainer.removeClass('hidden');
-        loader.animate(1.0);
+        loader.animate(3.0);
 
         // loader.animate(0);
     };

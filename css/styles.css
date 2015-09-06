@@ -17,12 +17,6 @@ main {
     //transform: translateY(-50%);
 }
 
-.load-container {
-    position: relative;
-    top: 40%;
-    transform: translateY(-50%);
-}
-
 .page-wrap {
 }
 

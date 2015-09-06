@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SOS - Головна сторінка</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/chosen/chosen.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body style="background-image: url(img/bogdan.jpg)">
 <div class="page-wrap container-fluid">
     <main id="js-main"></main>
-
-    <div class="container-fluid load-container">
-        <div class="hidden" id="js-loader-container"></div>
-    </div>
 </div>
 
 <div class="modal fade confirmation-modal" id="js-confirmation-modal" tabindex="-1" role="dialog">
@@ -30,7 +26,7 @@
             </div>
             <div class="modal-body" id="js-confirmation-body">
                 <p>
-                    <button type="button" class="btn btn-primary btn-lg width100">Викликати</button>
+                    <button type="button" class="btn btn-primary btn-lg width100 js-service-caller">Викликати</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default btn-lg width100" data-dismiss="modal">Відміна</button>
@@ -40,15 +36,17 @@
     </div>
 </div>
 
+<div id="js-spinner-container"></div>
+
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/bootstrap.js"></script>
 <script src="js/vendor/js.cookie.js"></script>
-<script src="js/vendor/progressbar.js"></script>
-<script src="js/loader.js"></script>
+<script src="js/vendor/spinner.js"></script>
 
+<script src="js/settings.js"></script>
 <script src="js/main.js"></script>
-<script src="js/loader.js"></script>
 <script src="js/services.js"></script>
+<script src="js/caller.js"></script>
 
 </body>
 </html>

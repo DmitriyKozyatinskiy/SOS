@@ -20,15 +20,16 @@
     $.ajax({
         url: contentUrl,
         beforeSend: function () {
-            Loader.show();
+            // Loader.show();
         }
     }).done(function (response) {
         $mainContainer.html(response);
-    }).always(function () {
-        Loader.hide();
     });
 
     $(document)
         .on('submit', '#js-login-form', logIn)
-        .on('click', '#js-logout-button', logOut);
+        .on('click', '#js-logout-button', logOut)
+        .ajaxSend(function () {
+            spinner.spin(document.getElementById('js-spinner-container'));
+        });
 }(document, jQuery));

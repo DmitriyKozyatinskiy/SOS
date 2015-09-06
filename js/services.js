@@ -2,12 +2,13 @@
     'use strict';
 
     var showAllServices = function () {
+        $('#js-logos').removeClass('hidden');
+        $('#js-success-message').addClass('hidden');
         $('#js-service-main-logo').collapse('hide');
         $('#js-service-logos').collapse('show');
     };
 
     var showConfirmation = function () {
-        console.log('hello');
         var $trigger = $(this),
             message = $trigger.data('message');
 
@@ -17,5 +18,5 @@
 
     $(document)
         .on('click', '.js-service-button', showConfirmation)
-        .on('click', '#js-other-services-button', showAllServices);
+        .on('click', '.js-other-services-button', showAllServices);
 }(document, jQuery));
